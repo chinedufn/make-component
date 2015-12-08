@@ -1,0 +1,37 @@
+{
+  "name": "make-component",
+  "version": "0.0.1",
+  "description": "Create a virtual-dom component",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chinedufn/make-component.git"
+  },
+  "keywords": [
+    "component",
+    "make",
+    "create",
+    "generate",
+    "auto",
+    "automatic",
+    "vdom",
+    "virtual-dom"
+  ],
+  "author": "Chinedu Francis Nwafili <frankie.nwafili@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chinedufn/make-component/issues"
+  },
+  "homepage": "https://github.com/chinedufn/make-component",
+  "devDependencies": {
+    "standard": "^5.4.1",
+    "tape": "^4.2.2"
+  },
+  "dependencies": {
+    "camelcase": "^2.0.1",
+    "meow": "^3.6.0"
+  }
+}

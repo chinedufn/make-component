@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "Generate virtual-dom components",
   "main": "src/index.js",
+  "bin": {
+    "mco": "./bin/mco.js"
+  },
   "scripts": {
-    "test": "node test/index.js"
+    "test": "standard && node test/index.js"
   },
   "repository": {
     "type": "git",

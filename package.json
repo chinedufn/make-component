@@ -1,7 +1,7 @@
 {
   "name": "make-component",
   "version": "0.0.1",
-  "description": "Create a virtual-dom component",
+  "description": "Generate virtual-dom components",
   "main": "src/index.js",
   "scripts": {
     "test": "node test/index.js"

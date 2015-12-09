@@ -7,11 +7,11 @@ var componentNode = fs.readFileSync('./fixture/some-component.js', 'utf8')
 var componentStyle = fs.readFileSync('./fixture/some-component_style.js', 'utf8')
 
 test(function (t) {
-  t.equal(makeComponentNode('some-component'), componentNode)
+  t.equal(makeComponentNode('some-component') + '\n', componentNode)
   t.end()
 })
 
 test(function (t) {
-  t.equal(makeComponentStyle('some-component'), componentStyle)
+  t.equal(makeComponentStyle('some-component') + '\n', componentStyle)
   t.end()
 })

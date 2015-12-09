@@ -22,7 +22,7 @@ function MakeNode (componentName) {
   '  }, [\n' +
   '  ])\n\n' +
   '  return rendered' + uppercaseName + '\n' +
-  '}\n'
+  '}'
 
   return componentNode
 }

@@ -26,7 +26,7 @@ function MakeStyle (componentName) {
     componentStyle += createViewportStyle(styleName, viewports[key])
   }
 
-  componentStyle += 'module.exports = ' + styleName + '\n'
+  componentStyle += 'module.exports = ' + styleName
 
   return componentStyle
 }

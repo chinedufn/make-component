@@ -16,9 +16,9 @@ function MakeNode (componentName) {
   '}\n\n' +
 
   'function Render' + uppercaseName + ' (viewport) {\n' +
-  '  var someComponentStyle = style[viewport] || style.base\n\n' +
+  '  var ' + camelCasedName + 'Style = style[viewport] || style.base\n\n' +
   '  var rendered' + uppercaseName + " = h('div', {\n" +
-  '    style: someComponentStyle\n' +
+  '    style: ' + camelCasedName + 'Style\n' +
   '  }, [\n' +
   '  ])\n\n' +
   '  return rendered' + uppercaseName + '\n' +

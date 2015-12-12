@@ -1,6 +1,6 @@
 {
   "name": "make-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate virtual-dom components",
   "main": "src/index.js",
   "bin": {

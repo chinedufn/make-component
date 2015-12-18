@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "camelcase": "^2.0.1",
-    "meow": "^3.6.0"
+    "meow": "^3.6.0",
+    "mkdirp": "^0.5.1"
   }
 }

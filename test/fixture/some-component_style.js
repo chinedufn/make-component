@@ -7,16 +7,16 @@ SomeComponentStyle.base = {
 SomeComponentStyle.wrist = extend(SomeComponentStyle.base, {
 })
 
-SomeComponentStyle.palm = extend(SomeComponentStyle.base, {
+SomeComponentStyle.palm = extend(SomeComponentStyle.wrist, {
 })
 
-SomeComponentStyle.lap = extend(SomeComponentStyle.base, {
+SomeComponentStyle.lap = extend(SomeComponentStyle.palm, {
 })
 
-SomeComponentStyle.desk = extend(SomeComponentStyle.base, {
+SomeComponentStyle.desk = extend(SomeComponentStyle.lap, {
 })
 
-SomeComponentStyle.wall = extend(SomeComponentStyle.base, {
+SomeComponentStyle.wall = extend(SomeComponentStyle.desk, {
 })
 
 module.exports = SomeComponentStyle

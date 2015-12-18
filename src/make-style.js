@@ -2,13 +2,8 @@ var camelCase = require('camelcase')
 
 module.exports = MakeStyle
 
-var viewports = [
-  'wrist',
-  'palm',
-  'lap',
-  'desk',
-  'wall'
-]
+var viewports = ['wrist', 'palm', 'lap', 'desk', 'wall']
+viewports.unshift('base')
 
 function MakeStyle (componentName) {
   var camelCasedName = camelCase(componentName)
@@ -23,7 +18,9 @@ function MakeStyle (componentName) {
   '}\n\n'
 
   for (var key in viewports) {
-    componentStyle += createViewportStyle(styleName, viewports[key])
+    if (key !== '0') {
+      componentStyle += createViewportStyle(styleName, viewports[key], viewports[key - 1])
+    }
   }
 
   componentStyle += 'module.exports = ' + styleName
@@ -31,9 +28,9 @@ function MakeStyle (componentName) {
   return componentStyle
 }
 
-function createViewportStyle (styleName, viewportName) {
+function createViewportStyle (styleName, viewportName, previousViewportName) {
   var viewportStyle = '' +
-  styleName + '.' + viewportName + ' = ' + 'extend(' + styleName + '.base, {\n' +
+  styleName + '.' + viewportName + ' = ' + 'extend(' + styleName + '.' + previousViewportName + ', {\n' +
   '})\n\n'
 
   return viewportStyle

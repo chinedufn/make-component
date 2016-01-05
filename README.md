@@ -39,6 +39,7 @@ makeStyle('component-name')
 ```sh
 $ mco component-name > ./path/to/dir/component-name.js
 $ mco component-name -s > ./path/to/dir/component-name_style.js
+$ mco component-name -d # dump out a component folder with the node and its styles
 ```
 
 ## License

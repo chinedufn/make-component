@@ -4,8 +4,8 @@ module.exports = {
   render: RenderSomeComponent
 }
 
-function RenderSomeComponent (h, viewport, opts) {
-  var someComponentStyle = style[viewport] || style.base
+function RenderSomeComponent (h, state) {
+  var someComponentStyle = style[state.viewport.range] || style.base
 
   var renderedSomeComponent = h('div', {
     attributes: { filepath: __filename },

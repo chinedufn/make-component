@@ -13,8 +13,8 @@ function MakeNode (componentName) {
   '  render: Render' + uppercaseName + '\n' +
   '}\n\n' +
 
-  'function Render' + uppercaseName + ' (h, viewport, opts) {\n' +
-  '  var ' + camelCasedName + 'Style = style[viewport] || style.base\n\n' +
+  'function Render' + uppercaseName + ' (h, state) {\n' +
+  '  var ' + camelCasedName + 'Style = style[state.viewport.range] || style.base\n\n' +
   '  var rendered' + uppercaseName + " = h('div', {\n" +
   '    attributes: { filepath: __filename },\n' +
   '    style: ' + camelCasedName + 'Style\n' +

@@ -10,10 +10,10 @@ function MakeNode (componentName) {
   "var style = require('./" + componentName + "_style.js')\n\n" +
 
   'module.exports = {\n' +
-  '  render: Render' + uppercaseName + '\n' +
+  '  render: render' + uppercaseName + '\n' +
   '}\n\n' +
 
-  'function Render' + uppercaseName + ' (h, state) {\n' +
+  'function render' + uppercaseName + ' (h, state) {\n' +
   '  var ' + camelCasedName + 'Style = style[state.viewport.range] || style.base\n\n' +
   '  var rendered' + uppercaseName + " = h('div', {\n" +
   '    attributes: { filepath: __filename },\n' +

@@ -18,7 +18,7 @@ var cli = meow({
 
 var componentName = cli.input[0]
 
-var nodeFilename = componentName + '.js'
+var nodeFilename = componentName + '-view.js'
 var styleFilename = componentName + '_style.js'
 
 var node = makeNode(componentName)
